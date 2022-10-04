@@ -13,9 +13,8 @@
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{bigints}
+\usepackage{fontspec}
 
-
-%KAMO SEVOYAN MAKER
 
 \usepackage{geometry}
  \geometry
@@ -27,15 +26,12 @@
  	top=20mm,
  }
 
-\usepackage{fontspec}
 
 
 \begin{document}
 %\onehalfspacing
 
-\setmainfont{Arm Hmk's Light}
-
-
+\setmainfont{Arian AMU}
 
 \begin{titlepage}
 	\begin{center}
@@ -52,7 +48,7 @@
 		
 		       \vspace{0.8cm}
 		     
-		\includegraphics[width=0.4\textwidth]{university}
+		\includegraphics[width=0.4\textwidth]{images/university}
 
 
 		       \vspace{1.5cm}
@@ -87,6 +83,9 @@
 
 \end{titlepage}
 
+\begin{center}
+\textbf{Տարբերակ 23}
+\end{center}
 
 \section*{Խնդիր 1}
 
@@ -604,7 +603,7 @@ $$ = \dfrac{2}{3}\left(\sin\dfrac{1}{12} + \sin\dfrac{1}{20} + 4\left[\sin\dfrac
 
 \end{itemize}
 
-\item Ինտեգրալների հաշվում մաքսիմալ սխալի պայմանով։
+\item Ինտեգրալների հաշվում մաքսիմալ թույլատրելի սխալի պայմանով։
 
 \begin{itemize}
 
@@ -690,7 +689,7 @@ $$f\left(x\right) = \cos\left(x+4\right), \left[a, b\right] = \left[-1 ,0\right]
 Ստորև ներկայացված է $\delta_{n} \left(x\right) = f\left(x\right) - L_{n-1}\left(x\right)$ ֆունկցիաների գրաֆիկները հավասարահեռ հանգույցների դեպքում։
 
 \begin{figure}[h]
-   \includegraphics[width=\textwidth]{lagrange_equilateral_nodes}
+   \includegraphics[width=\textwidth]{images/lagrange_equilateral_nodes}
 \end{figure}
 
 \newpage
@@ -698,7 +697,7 @@ $$f\left(x\right) = \cos\left(x+4\right), \left[a, b\right] = \left[-1 ,0\right]
 Ստորև ներկայացված է $\delta_{n} \left(x\right) = f\left(x\right) - L_{n-1}\left(x\right)$ ֆունկցիաների գրաֆիկները օպտիմալ հանգույցների դեպքում։
 
 \begin{figure}[h]
-   \includegraphics[width=\textwidth]{lagrange_optimal_nodes}
+   \includegraphics[width=\textwidth]{images/lagrange_optimal_nodes}
 \end{figure}
 
 \footnotetext{Բազմանդամերի հաշվումը և գրաֆիկերի կազմումը կատարվել է $Python$ ծրագրավորման լեզվի $NumPy$ և $MatPlotLib$ գրադարանների միջոցով։}
@@ -726,11 +725,10 @@ $$f\left(x\right) = \cos\left(x+4\right), \left[a, b\right] = \left[-1 ,0\right]
 $\omega$ ֊ն ընտրենք այնպես, որ (1) ֊ի ձախ ինտեգրալում սխալը չգերազանցի $\dfrac{\epsilon}{2}$ ֊ը։
 
 		$$\int_{\omega}^{+\infty}\dfrac{\sin\left(x - 3\right)}{\sqrt[3]{x^{4}\left(2x+7\right)}}dx  \leq \int_{\omega}^{+\infty}\dfrac{1}{\sqrt[3]{x^{4}\left(2x+7\right)}}dx \leq
-		\int_{\omega}^{+\infty} x ^ {-\sfrac{4}{3}} dx < \dfrac{\epsilon}{2} \implies -\frac{3}{4} x ^ {-\frac{7}{3}} \Big |_{\omega}^{+\infty}  < \dfrac{\epsilon}{2} \implies$$
+		\int_{\omega}^{+\infty} x ^ {-\sfrac{5}{3}} dx < \dfrac{\epsilon}{2} \implies -\frac{3}{2} x ^ {-\frac{2}{3}} \Big |_{\omega}^{+\infty}  < \dfrac{\epsilon}{2} \implies$$
 
-		$$ \implies \frac{3}{4}\omega^{-\frac{4}{3}} < \frac{\epsilon}{2} \implies \omega > \left(\dfrac{2}{3}\epsilon \right)^{-\frac{3}{4   }} \implies \omega > \left(\dfrac{2}{3} * 0.01\right)^{-\frac{3}{4}} \approx 42.86$$
+		$$ \implies\frac{3}{2}\omega^{-\frac{2}{3}} < \frac{\epsilon}{2} \implies \omega > \left(\dfrac{\epsilon}{3} \right)^{-\sfrac{3}{2}} \approx 164317$$
 
-Հեշտության համար վերցնենք $\omega = 43$։
 
 Այսպիսով, եթե անիսկական ինտեգրալի փոխարեն հաշվենք (1) բանաձևի աջ մասի առաջին ինտեգրալը, ապա սխալը չի գերազանցի $\dfrac{\epsilon}{2}$֊ը։
 
