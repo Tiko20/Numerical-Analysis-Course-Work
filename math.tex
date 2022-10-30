@@ -412,7 +412,7 @@ $$
 				$$R_{2} = M_{2} \dfrac{h^{2}}{8}$$
 				$$M_{2} = \underset{x \in \left[10, 1000\right]}{max}\left|f^{\left(2\right)}\left(x\right)\right| = \left|f^{\left(2\right)}\left(10\right)\right| \approx 1.1 * 10^{-3}$$
 
-Որտեղից $h$֊ի համար կունենք․
+Որտեղից $h$֊ի համար կունենանք․
 
 				$$ h = \sqrt{\dfrac{8 \epsilon}{M_{2}}} \approx 0.834$$
 				Հանգույցների քանակը՝ $$N = \left \lceil{\dfrac{1000 - 10}{h}} \right \rceil = 1188$$
@@ -421,7 +421,7 @@ $$
 				$$R_{3} = M_{3} \dfrac{h^{3}}{9 \sqrt{3}}$$
 				$$M_{3} = \underset{x \in \left[10, 1000\right]}{max}\left|f^{\left(3\right)}\left(x\right)\right| = \left|f^{\left(3\right)}\left(10\right)\right| \approx 3 * 10^{-4}$$
 
-Որտեղից $h$֊ի համար կունենք․
+Որտեղից $h$֊ի համար կունենանք․
 
 				$$ h = \sqrt[\leftroot{5} \uproot{5} 3]{\dfrac{9 \sqrt{3} \epsilon}{M_{3}}} \approx 1.76$$
 				Հանգույցների քանակը՝ $$N = \left \lceil{\dfrac{1000 - 10}{h}} \right \rceil_{N = 2n + 3} = 563$$
@@ -430,17 +430,17 @@ $$
 				$$R_{4} = M_{4} \dfrac{h^{4}}{24}$$
 				$$M_{4} = \underset{x \in \left[10, 1000\right]}{max}\left|f^{\left(4\right)}\left(x\right)\right| = \left|f^{\left(4\right)}\left(10\right)\right| \approx 9 * 10^{-5}$$
 
-Որտեղից $h$֊ի համար կունենք․
+Որտեղից $h$֊ի համար կունենանք․
 
 				$$ h = \sqrt[\leftroot{5} \uproot{5} 4]{\dfrac{24 \epsilon}{M_{4}}} \approx 2.24$$
-				Հանգույցների քանակը՝ $$N = \left \lceil{\dfrac{1000   10}{h}} \right \rceil_{N = 3n + 4} = 442$$
+				Հանգույցների քանակը՝ $$N = \left \lceil{\dfrac{1000 - 10}{h}} \right \rceil_{N = 3n + 4} = 442$$
 
 \end{itemize}
 
 
 Դիտարկենք փոփոխական քայլի դեպքը․
 
-$\left[10, 1000\right]$ հատվածը բաժանենք $\left(10, 340, 670, 100\right)$ հանգույցներով։
+$\left[10, 1000\right]$ հատվածը բաժանենք $\left(10, 340, 670, 1000\right)$ հանգույցներով։
 
 
 \begin{itemize}
@@ -630,16 +630,16 @@ $$\int_{10}^{18} f \left(x\right) = C_{1}f\left(x_{1}\right)+C_{2}f\left(x_{2}\r
 
 $\left[10, 18\right]$ միջակայքում ուղղահայաց բազմանդամներ գտնենք օգտվելով Լեժանդրի բազմանդամներից։
 
-			$$L_n\left(x\right) = \dfrac{1}{n ! 2 ^ {n}} \frac{d}{d x^{n}} \left[\left(x ^ {2} - 1\right) ^ {n} \right]$$
+			$$L_n\left(x\right) = \dfrac{1}{n ! 2 ^ {n}} \frac{d^n}{d x^{n}} \left[\left(x ^ {2} - 1\right) ^ {n} \right]$$
 
-			$$L_3\left(x\right) = \dfrac{1}{48}\dfrac{d}{dx^{3}}\left[x ^ {6} - 3x^4 + 3x^2 +1\right] = \dfrac{5}{2} x^{3} - \dfrac{3}{2} x ^ {2}$$
+			$$L_3\left(x\right) = \dfrac{1}{48}\dfrac{d^3}{dx^{3}}\left[x ^ {6} - 3x^4 + 3x^2 +1\right] = \dfrac{5}{2} x^{3} - \dfrac{3}{2} x ^ {2}$$
 
 			$$L_3\left(t\right) = 0 \implies t = 0, t = \pm \sqrt{\dfrac{3}{5}}$$
 
  
 Ստացված արմատները տանենք $\left[10, 18\right]$ միջակայք։
 
-							$$x_{k} = 4 t_{k} + 14 \implies x_{1} = 14 - \sqrt{\dfrac{3}{5}}, x_{2} = 14, x_{3} = 14 + \sqrt{\dfrac{3}{5}}, x_{2}$$
+							$$x_{k} = 4 t_{k} + 14 \implies x_{1} = 14 - 4 \sqrt{\dfrac{3}{5}}, x_{2} = 14, x_{3} = 14 + 4\sqrt{\dfrac{3}{5}}, x_{2}$$
 
 
 Քանի որ բանաձևը ճշգրիտ է 0, 1, 2 կարգի բազմանդամների համար՝
@@ -655,9 +655,9 @@ $$
 
 $$
 \begin{cases}
- C_{1} + C_{2} + C_{3} = 4 \\
+ C_{1} + C_{2} + C_{3} = 8 \\
  -4\sqrt{\dfrac{3}{5}}C_{1}  + 4\sqrt{\dfrac{3}{5}} C_{3} = 0\\
-\dfrac{48}{3}C_{1}+ \dfrac{48}{3} C_{3} = \dfrac{128}{3} 
+\dfrac{48}{5}C_{1}+ \dfrac{48}{5} C_{3} = \dfrac{128}{3} 
 
 \end{cases} \implies C_{1} = C_{3} = \dfrac{20}{9}, C_{2} = \dfrac{32}{9}
 $$
